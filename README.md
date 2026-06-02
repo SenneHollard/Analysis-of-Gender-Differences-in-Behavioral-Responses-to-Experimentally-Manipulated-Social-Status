@@ -156,22 +156,6 @@ install.packages(c("haven", "ggplot2", "survival", "knitr"))
 
 ---
 
-## Citation
-
-If you use this replication package, please cite:
-
-```bibtex
-@thesis{hollard2026,
-  author = {Senne Hollard},
-  title = {Analysis of Gender Differences in Behavioral Responses to Experimentally Manipulated Social Status},
-  school = {[Your University]},
-  year = {2026},
-  note = {Replication materials available at \url{https://github.com/SenneHollard/Analysis-of-Gender-Differences-in-Behavioral-Responses-to-Experimentally-Manipulated-Social-Status}}
-}
-```
-
----
-
 ## License
 
 This replication package is provided as-is for academic and educational purposes. The code itself is free to use and modify. The reanalyzed datasets are publicly available through the original replication packages (see citations above).
