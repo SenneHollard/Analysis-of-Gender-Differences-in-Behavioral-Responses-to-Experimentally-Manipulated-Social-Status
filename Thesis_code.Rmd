@@ -173,20 +173,7 @@ power_row <- function(label, b, se, n) data.frame(
 # Data loading
 
 ```{r load-data}
-loss_path <- file.path(getwd(), "0Loss_aversion_data",
-  "Loss Aversion in Social Image Concerns No Raven- Replication package",
-  "data-analysis", "ExperimentMain.dta")
-
-prosocial_path <- file.path(getwd(), "0Prosocial_behavior_data",
-  "Pooled_data_April27.dta")
-
-stopifnot(file.exists(loss_path), file.exists(prosocial_path))
-
-loss_raw      <- to_numeric(read_dta(loss_path))
-prosocial_raw <- to_numeric(read_dta(prosocial_path))
-
-cat("Study I  (raw):", nrow(loss_raw),      "subjects\n")
-cat("Study II (raw):", nrow(prosocial_raw), "rows\n")
+#load the data here
 ```
 
 ---
