@@ -12,7 +12,6 @@ This repository contains the complete replication materials for my bachelor's th
 ## Contents
 
 - **`Thesis_code.Rmd`**: Complete empirical analysis with figures, tables, and diagnostic tests. Outputs PDF and HTML documents with table of contents.
-- **`data/`**: Folder for the two publicly available replication datasets (not included in this repo).
 - **`output/`**: Generated automatically when you run the analysis; contains CSV tables and PNG figures for inclusion in the thesis.
 
 ---
@@ -28,7 +27,7 @@ Riener, G., Petrishcheva, V., & Schildberg-Hörisch, H. (2022). *Replication dat
 Petrishcheva, V., Riener, G., & Schildberg-Hörisch, H. (2023). *Loss aversion in social image concerns*. *Experimental Economics*, 26(3), 622–645.
 
 **Setup:**
-1. Download the replication package from the DOI link above.
+1. Download the replication package from the DOI link above. If the DOI or repository link does not resolve, refer to the **Troubleshooting** section below under **"Broken replication-data link"**.
 2. Extract `ExperimentMain.dta` and place it at:
    ```
    data/study1_loss_aversion/ExperimentMain.dta
@@ -43,7 +42,7 @@ Zheng, J. D., Schram, A., & Song, T. (2023). *Replication Data for: "Social Stat
 Zheng, J. D., Schram, A., & Song, T. (2023). *Social status and prosocial behavior*. *Experimental Economics*, 26(5), 1085–1114.
 
 **Setup:**
-1. Download the replication package from the DOI link above.
+1. Download the replication package from the DOI link above. If the DOI or repository link does not resolve, refer to the **Troubleshooting** section below under **"Broken replication-data link"**.
 2. Extract `Pooled_data_April27.dta` and place it at:
    ```
    data/study2_prosocial_behavior/Pooled_data_April27.dta
@@ -139,22 +138,10 @@ install.packages(c("haven", "ggplot2", "survival", "knitr"))
 - **"file not found" error:** Check that `.dta` filenames exactly match those shown above and are in the correct folders.
 - **Package installation errors:** Run `install.packages("package_name")` for any missing packages.
 - **Out-of-memory during bootstrap:** The cluster bootstrap uses 499 replications; reduce `B_BOOT` in the setup chunk if needed.
+- **Broken replication-data link:** If a DOI or repository link for an original replication package does not resolve, search for the dataset using the paper title, dataset title, DOI, author names, and repository name listed in the paper or references. Also try accessing the repository directly and searching within it. If the dataset is still unavailable, document the access issue and date of access, and contact the original authors or the repository support team.
 
 ---
 
-## Main Results Summary
-
-### Study I
-- **Male RD estimate (τ):** Reported in Table 5 (Panel B, with controls).
-- **Female RD estimate (τ):** Reported in Table 5 (Panel B, with controls).
-- **Gender difference (θ):** Formal Wald-style test of `Loss × Male` in the pooled model; results in Table 6 power diagnostics.
-
-### Study II
-- **Status treatment effects:** Table 7 shows separate effects for men and gender-interaction coefficients for women across three outcomes (chosen effort, mean response, proposal received).
-- **Hypothesis test (H2b):** Wald test of whether the high-status gender interaction differs between randomly assigned and earned status (reported with χ²(1) statistic and p-value).
-- **Power:** Table 8 shows post-estimation power diagnostics for all gender coefficients.
-
----
 
 ## License
 
